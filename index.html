@@ -1,51 +1,80 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Boty</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boty</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- levá (zelená) polovina -->
+      <div class="left-side">
+        <img
+          class="left-side__logo"
+          src="images/nike.svg"
+          alt="logo Nike"
+          width="65"
+          height="24"
+        />
 
-	<!-- levá (zelená) polovina -->
-		<img src="images/nike.svg" alt="logo Nike" width="65" height="24">
+        <p class="left-side__motto">
+          Zrychli tempo,<br />
+          soustřeď se na rychlost!
+        </p>
 
-		<p>
-			Zrychli tempo,<br>
-			soustřeď se na rychlost!
-		</p>
+        <img
+          class="left-side__image"
+          src="images/bota.png"
+          alt="fotografie Nike Air Zoom Pegasus 33"
+          width="415"
+          height="295"
+        />
 
-		<img src="images/bota.png" alt="fotografie Nike Air Zoom Pegasus 33" width="415" height="295">
+        <div class="left-side__offer">
+          <div class="left-side__price">2450&nbsp;Kč</div>
+          <div class="left-side__guarantee">Prodloužená záruka 3 roky</div>
+        </div>
+      </div>
+      <!-- konec levé poloviny -->
 
-		<div>2450&nbsp;Kč</div>
-		<div>Prodloužená záruka 3 roky</div>
-	<!-- konec levé poloviny -->
+      <!-- pravá (bílá) polovina -->
 
+      <div class="right-side">
+        <section class="right-side__description">
+          <h1 class="right-side__title">Nike Air Zoom Pegasus 33</h1>
 
-	<!-- pravá (bílá) polovina -->
-		<h1>Nike Air Zoom Pegasus 33</h1>
+          <p class="right-side__specification">Dámská běžecká bota</p>
 
-		<p>Dámská běžecká bota</p>
+          <p>
+            Nike Air Zoom Pegasus 33 dokonale padne, dodá pocit rychlosti a má
+            pružné tlumení, které ti umožní zrychlit tempo a soustředit se na
+            rychlost.
+          </p>
+        </section>
+        <section class="right-side__size-choice">
+          <h2 class="right-side__subtitle">Velikost</h2>
 
-		<p>
-			Nike Air Zoom Pegasus 33 dokonale padne, dodá pocit rychlosti a má pružné tlumení, které ti umožní zrychlit tempo a soustředit se na rychlost.
-		</p>
-
-		<h2>Velikost</h2>
-
-		<ul>
-			<li>35</li>
-			<li>36</li>
-			<li>37</li>
-			<li>38</li><!-- tato velikost bude zvýrazněná jako vybraná -->
-			<li>39</li>
-			<li>40</li>
-		</ul>
-
-		<a href="#">Do košíku</a>
-	<!-- konec pravé poloviny -->
-
-</body>
+          <ul class="right-side__sizes">
+            <li>35</li>
+            <li>36</li>
+            <li>37</li>
+            <li class="size--active">38</li>
+            <!-- tato velikost bude zvýrazněná jako vybraná -->
+            <li>39</li>
+            <li>40</li>
+          </ul>
+        </section>
+        <a class="right-side__button" href="#">Do košíku</a>
+        <!-- konec pravé poloviny -->
+      </div>
+    </div>
+  </body>
 </html>

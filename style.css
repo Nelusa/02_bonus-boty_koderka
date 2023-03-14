@@ -1,9 +1,29 @@
 /* intuitivnejsi box-sizing */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-    text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li,
+ol li {
+  list-style: none;
 }
 
 /*
@@ -21,3 +41,119 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+
+.container {
+  display: flex;
+  width: 670px;
+  height: 440px;
+  border-radius: 10px;
+  margin: 200px auto;
+  box-shadow: 6px 2px 19px 0px rgba(201, 201, 201, 1);
+}
+
+/* LEFT SIDE */
+
+.left-side {
+  width: 50%;
+  background-image: linear-gradient(#06d7c1, #50cc49);
+  border-radius: 10px 0 0 10px;
+  position: relative;
+  padding: 30px;
+}
+
+.left-side__logo {
+  margin-bottom: 30px;
+}
+
+.left-side__motto {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.left-side__image {
+  position: absolute;
+  left: -80px;
+  bottom: 10px;
+}
+
+.left-side__offer {
+  color: #ffffff;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+.left-side__price {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: end;
+  margin-bottom: 3px;
+}
+
+.left-side__guarantee {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* RIGHT SIDE */
+
+.right-side {
+  padding: 30px;
+  width: 50%;
+  background-color: #ffffff;
+  border-radius: 0 10px 10px 0;
+  position: relative;
+}
+
+.right-side__title {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.right-side__specification {
+  color: #959595;
+  margin-bottom: 30px;
+}
+
+.right-side__size-choice {
+  border-top: 1px solid #06d7c1;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+.right-side__subtitle {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.right-side__sizes {
+  display: flex;
+  gap: 15px;
+}
+
+.right-side__sizes li {
+  padding: 5px;
+}
+
+.size--active {
+  border: 1px solid #f15f42;
+  color: #f15f42;
+  font-weight: 500;
+  border-radius: 50%;
+}
+
+.right-side__button {
+  border-radius: 5px;
+  background-color: #f15f42;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 12px 25px;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  letter-spacing: 1px;
+}
